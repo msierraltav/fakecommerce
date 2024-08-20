@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Product, TGetData } from "@/lib/types";
 import {useAppDispatch, useAppSelector} from "@/hooks/useReduxHooks"
 import {useGetProductsQuery} from "@/redux/services/productsApi"
+import Link from "next/link";
 
 
 export default function ProductsList() {
@@ -37,7 +38,10 @@ export default function ProductsList() {
               key={product.id}
             >
               <CardHeader className="flex-col items-start px-4 pb-0 pt-2">
-                <p className="text-tiny font-bold uppercase">{product.title}</p>
+                <Link href={`/product/${product.id}`}>
+                  <p className="text-tiny font-bold uppercase">{product.title}</p>
+                </Link>
+                
                 <small className="text-default-500">
                   {product.currency} {product.price}
                 </small>

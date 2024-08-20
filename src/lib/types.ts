@@ -10,6 +10,7 @@ export interface Product{
     currency: string,
     image: string,
     rating: number,
+    description: string,
 }
 
 export interface TGetData{
