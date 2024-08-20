@@ -1,5 +1,5 @@
 "use client"
-import { Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, CardHeader, Divider } from "@nextui-org/react";
 import Image from "next/image";
 import { Product, TGetData } from "@/lib/types";
 import {useAppDispatch, useAppSelector} from "@/hooks/useReduxHooks"
@@ -52,7 +52,10 @@ export default function ProductsList() {
                 </Link>
                 
                 <small className="text-default-500">
-                  {product.currency} {product.price}
+                  {product.currency} ${product.price}
+                </small>
+                <small className="text-tiny font-bold uppercase">
+                  <span>⭐{product.rating}</span>
                 </small>
               </CardHeader>
               <CardBody className="overflow-visible py-2">
@@ -64,6 +67,21 @@ export default function ProductsList() {
                   height={-1}
                 />
               </CardBody>
+              <CardFooter className="text-ellipsis text-xs">
+                {product.description.length > 100 ? 
+                (
+                  <span>
+                    {product.description.substring(0, 100)}...
+                    <Link href={`/product/${product.id}`} className="text-default-500">
+                      Read More
+                    </Link>
+                  </span>
+                ) : 
+                (<span>
+                  {product.description}
+                </span>)
+                }
+              </CardFooter>
             </Card>
             
           ))}

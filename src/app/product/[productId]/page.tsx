@@ -40,6 +40,9 @@ export default function Product({ params }: ProductProps) {
             <small className="text-default-500">
               {product.currency} {product.price}
             </small>
+            <small className="text-tiny font-bold uppercase">
+                  <span>⭐{product.rating}</span>
+                </small>
           </CardHeader>
           <CardBody className="overflow-visible py-2">
             <Image
@@ -49,7 +52,6 @@ export default function Product({ params }: ProductProps) {
               width={270}
               height={-1}
             />
-            <small> {product.rating}</small>
             <small> {product.description}</small>
           </CardBody>
         </Card>
