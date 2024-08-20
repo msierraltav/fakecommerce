@@ -7,8 +7,8 @@ export const productsApi = createApi({
         baseUrl: "http://localhost:3000"
     }),
     endpoints: (builder) => ({
-        getProducts: builder.query<Products, { page: number, limit: number }>({
-            query: ({ page, limit }) => `products?_page=${page}&_per_page=${limit}`
+        getProducts: builder.query<Products, { page: number, limit: number , sort: string }>({
+            query: ({ page, limit, sort }) => `products?_page=${page}&_per_page=${limit}&_sort=${sort}`
         }),
         getProductsOrderByPrice: builder.query<Products, { order: "asc" | "desc" }>({
             query: ({ order }) => `products?_sort=price&_order=${order}`

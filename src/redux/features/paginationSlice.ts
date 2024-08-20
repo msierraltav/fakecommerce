@@ -4,12 +4,14 @@ interface TPaginationInitialState{
     stringQuery: string;
     currentPage: number;
     limit: number;
+    sort: string;
 }
 
 const initialState : TPaginationInitialState= {
     stringQuery: "",
     currentPage: 1,
     limit: 10,
+    sort: "id",
 }
 
 export const paginationSlice = createSlice({
@@ -22,10 +24,12 @@ export const paginationSlice = createSlice({
         setStringQuery(state, action) {
             state.stringQuery = action.payload;
         },
-
+        setOrder(state, action) {
+            state.sort = action.payload;
+        }
     }
 })
 
-export const {setCurrentPage, setStringQuery} = paginationSlice.actions;
+export const {setCurrentPage, setStringQuery, setOrder} = paginationSlice.actions;
 
 export default paginationSlice.reducer;

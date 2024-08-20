@@ -15,7 +15,8 @@ export default function ProductsList() {
   const page = useAppSelector(state => state.paginationReducer.currentPage);
   const limit = useAppSelector(state => state.paginationReducer.limit)
   const query = useAppSelector(state => state.paginationReducer.stringQuery);
-  const {data, isLoading, error, isSuccess} = useGetProductsQuery({page:page, limit:limit});
+  const sort = useAppSelector(state => state.paginationReducer.sort);
+  const {data, isLoading, error, isSuccess} = useGetProductsQuery({page:page, limit:limit, sort: sort});
 
 
   const handlePaginationChange  = (e : any) =>{
