@@ -1,7 +1,6 @@
 # Fake Store
 
-data is served by my-jsop-server in the following route.
-https://my-json-server.typicode.com/msierraltav/fakecommerce
+A simple fake store using json-server , NextJs, Redux, and tailwind.
 
 ## Getting Started
 
