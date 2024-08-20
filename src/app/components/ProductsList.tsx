@@ -1,13 +1,13 @@
 "use client"
-import { Card, CardBody, CardFooter, CardHeader, Divider } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, CardHeader} from "@nextui-org/react";
 import Image from "next/image";
 import { Product, TGetData } from "@/lib/types";
 import {useAppDispatch, useAppSelector} from "@/hooks/useReduxHooks"
 import {useGetProductsQuery} from "@/redux/services/productsApi"
 import {setCurrentPage} from "@/redux/features/paginationSlice";
+import {addProduct} from "@/redux/features/cartSlice";
 import Link from "next/link";
 import { Pagination } from "@nextui-org/react";
-
 
 export default function ProductsList() {
 
@@ -22,6 +22,10 @@ export default function ProductsList() {
   const handlePaginationChange  = (e : any) =>{
     dispatch(setCurrentPage(e));
   };
+
+  const handleAddToCart = (product: Product) =>{
+    dispatch(addProduct(product));
+  }
 
   let products : Product[] | undefined = [];
 
@@ -67,8 +71,9 @@ export default function ProductsList() {
                   width={270}
                   height={-1}
                 />
+                <div onClick={() => handleAddToCart(product)} className="cursor-pointer">➕ Add to cart</div>
               </CardBody>
-              <CardFooter className="text-ellipsis text-xs">
+              <CardFooter>
                 {product.description.length > 100 ? 
                 (
                   <span>
@@ -84,7 +89,6 @@ export default function ProductsList() {
                 }
               </CardFooter>
             </Card>
-            
           ))}
         </div>
       ) : (<div className="mb-3 grid grid-cols-5 gap-3"> No Data... </div>)}
