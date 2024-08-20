@@ -3,23 +3,16 @@ import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 import { Product, TGetData } from "@/lib/types";
 import {useAppDispatch, useAppSelector} from "@/hooks/useReduxHooks"
+import {useGetProductsQuery} from "@/redux/services/productsApi"
 
-interface ProductsListProps {
-  productsData: TGetData;
-}
 
-export default function ProductsList({
-  productsData,
-}: ProductsListProps) {
+export default function ProductsList() {
 
   const currentPage = useAppSelector(state => state.paginationReducer.currentPage);
   const query = useAppSelector(state => state.paginationReducer.stringQuery);
-  const { data, loading, error } = productsData;
+  const {data, isLoading, error, isSuccess} = useGetProductsQuery(null);
 
-  console.log("currentpage", currentPage);
-
-
-  let products : Product[] | undefined;
+  let products : Product[] | undefined = [];
 
   if(query){
     const filterProducts = data?.filter((product : Product ) => {
@@ -34,9 +27,9 @@ export default function ProductsList({
 
   return (
     <div>
-      {loading && <div> Loading ...</div>}
+      {isLoading && <div> Loading ...</div>}
       {error && <div>🚫</div>}
-      {products && products.length > 0 ?(
+      {isSuccess && products && products.length > 0 ?(
         <div className="mb-3 grid grid-cols-5 gap-3">
           {products?.map((product) => (
             <Card
