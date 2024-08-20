@@ -1,6 +1,6 @@
 // server render aproach
-import { Product } from "@/app/lib/types";
-import Products from "../components/Products";
+import { Product } from "@/lib/types";
+import Products from "../app/components/Products";
 
 export async function GetDataServer() {
 
