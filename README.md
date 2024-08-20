@@ -1,6 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fake Store
+
+data is served by my-jsop-server in the following route.
+https://my-json-server.typicode.com/msierraltav/fakecommerce
 
 ## Getting Started
+
+First Run the DB
+
+```bash
+npx json-server db.json
+```
 
 First, run the development server:
 
@@ -14,7 +23,10 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
+the DB will be [http://localhost:3000/products](http://localhost:3000/products)
+
+
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

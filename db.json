@@ -1,229 +1,457 @@
 {
     "products": [
-        {
-          "id": 1,
-          "title": "Wireless Bluetooth Earbuds",
-          "price": 59.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.3,
-          "description": "Enjoy high-quality sound and wireless convenience with these Bluetooth earbuds. Ideal for workouts and daily use."
-        },
-        {
-          "id": 2,
-          "title": "Smartphone with 128GB Storage",
-          "price": 699.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.6,
-          "description": "A powerful smartphone featuring 128GB of storage, a stunning display, and a long-lasting battery."
-        },
-        {
-          "id": 3,
-          "title": "Portable External Hard Drive 1TB",
-          "price": 79.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.2,
-          "description": "Store all your important files on this portable external hard drive with 1TB of storage capacity."
-        },
-        {
-          "id": 4,
-          "title": "4K Ultra HD Action Camera",
-          "price": 149.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.7,
-          "description": "Capture your adventures in stunning 4K resolution with this durable and waterproof action camera."
-        },
-        {
-          "id": 5,
-          "title": "Wireless Gaming Mouse",
-          "price": 49.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.4,
-          "description": "A high-performance wireless gaming mouse with customizable buttons and adjustable DPI settings."
-        },
-        {
-          "id": 6,
-          "title": "Noise-Cancelling Over-Ear Headphones",
-          "price": 129.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.8,
-          "description": "Immerse yourself in your favorite music with these noise-cancelling over-ear headphones, designed for comfort and clarity."
-        },
-        {
-          "id": 7,
-          "title": "Smart Home Speaker with Voice Assistant",
-          "price": 99.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.5,
-          "description": "Control your smart home devices and enjoy rich sound quality with this smart speaker equipped with a voice assistant."
-        },
-        {
-          "id": 8,
-          "title": "High-Speed USB-C Hub",
-          "price": 34.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.1,
-          "description": "Expand your connectivity options with this high-speed USB-C hub, perfect for laptops and tablets."
-        },
-        {
-          "id": 9,
-          "title": "Portable Solar Power Bank",
-          "price": 29.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 3.9,
-          "description": "Charge your devices on the go with this portable solar power bank, featuring multiple charging ports and a built-in flashlight."
-        },
-        {
-          "id": 10,
-          "title": "Fitness Tracker with Heart Rate Monitor",
-          "price": 69.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.3,
-          "description": "Track your fitness goals and monitor your heart rate with this sleek and stylish fitness tracker."
-        },
-        {
-          "id": 11,
-          "title": "Wireless Charging Pad",
-          "price": 19.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.0,
-          "description": "Conveniently charge your smartphone wirelessly with this fast-charging pad, compatible with most devices."
-        },
-        {
-          "id": 12,
-          "title": "Bluetooth Smartwatch with Fitness Tracking",
-          "price": 149.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.6,
-          "description": "Stay connected and track your fitness goals with this stylish Bluetooth smartwatch, featuring a variety of health monitoring tools."
-        },
-        {
-          "id": 13,
-          "title": "Wireless Noise-Cancelling Earbuds",
-          "price": 99.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.4,
-          "description": "Enjoy music on the go with these wireless noise-cancelling earbuds, perfect for commuting and travel."
-        },
-        {
-          "id": 14,
-          "title": "4K Ultra HD Smart TV 55-Inch",
-          "price": 899.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.7,
-          "description": "Watch your favorite shows in stunning detail with this 55-inch 4K Ultra HD Smart TV, featuring streaming apps and voice control."
-        },
-        {
-          "id": 15,
-          "title": "Portable Bluetooth Speaker",
-          "price": 39.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.3,
-          "description": "Bring the party wherever you go with this portable Bluetooth speaker, offering powerful sound and a long battery life."
-        },
-        {
-          "id": 16,
-          "title": "Smart Wi-Fi LED Light Bulb",
-          "price": 24.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.2,
-          "description": "Control the lighting in your home with this smart Wi-Fi LED light bulb, which works with most voice assistants."
-        },
-        {
-          "id": 17,
-          "title": "High-Resolution Webcam with Microphone",
-          "price": 69.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.5,
-          "description": "Upgrade your video calls with this high-resolution webcam, featuring a built-in microphone for clear audio."
-        },
-        {
-          "id": 18,
-          "title": "Ergonomic Wireless Keyboard and Mouse Combo",
-          "price": 79.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.4,
-          "description": "Work comfortably with this ergonomic wireless keyboard and mouse combo, designed for long hours of use."
-        },
-        {
-          "id": 19,
-          "title": "Laptop Cooling Pad",
-          "price": 29.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 3.8,
-          "description": "Keep your laptop cool and running efficiently with this cooling pad, featuring adjustable fan speeds and LED lighting."
-        },
-        {
-          "id": 20,
-          "title": "1080p Full HD Dash Cam",
-          "price": 99.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.6,
-          "description": "Record your drives in full HD with this dash cam, featuring night vision and loop recording."
-        },
-        {
-          "id": 21,
-          "title": "Smart Thermostat with Wi-Fi",
-          "price": 199.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.7,
-          "description": "Save on energy costs with this smart thermostat, which you can control from your phone or through voice commands."
-        },
-        {
-          "id": 22,
-          "title": "Wireless Charging Stand",
-          "price": 29.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.1,
-          "description": "Charge your devices wirelessly and in style with this sleek wireless charging stand, compatible with a range of smartphones."
-        },
-        {
-          "id": 23,
-          "title": "Digital Smart Scale with Bluetooth",
-          "price": 49.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.2,
-          "description": "Track your weight and other health metrics with this digital smart scale, which syncs with your smartphone via Bluetooth."
-        },
-        {
-          "id": 24,
-          "title": "Smart Doorbell Camera",
-          "price": 149.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.5,
-          "description": "Monitor your front door with this smart doorbell camera, featuring HD video, motion detection, and two-way audio."
-        },
-        {
-          "id": 25,
-          "title": "High-Speed HDMI Cable",
-          "price": 14.99,
-          "currency": "USD",
-          "Image": "https://via.placeholder.com/200",
-          "rating": 4.0,
-          "description": "Connect your devices with this high-speed HDMI cable, supporting 4K video and high-definition audio."
-        }
-      ]
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Earbuds",
+    "price": 59.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Enjoy high-quality sound and wireless convenience with these Bluetooth earbuds. Ideal for workouts and daily use."
+  },
+  {
+    "id": 2,
+    "title": "Smartphone with 128GB Storage",
+    "price": 699.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "description": "A powerful smartphone featuring 128GB of storage, a stunning display, and a long-lasting battery."
+  },
+  {
+    "id": 3,
+    "title": "Portable External Hard Drive 1TB",
+    "price": 79.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.2,
+    "description": "Store all your important files on this portable external hard drive with 1TB of storage capacity."
+  },
+  {
+    "id": 4,
+    "title": "4K Ultra HD Action Camera",
+    "price": 149.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.7,
+    "description": "Capture your adventures in stunning 4K resolution with this durable and waterproof action camera."
+  },
+  {
+    "id": 5,
+    "title": "Wireless Gaming Mouse",
+    "price": 49.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "description": "A high-performance wireless gaming mouse with customizable buttons and adjustable DPI settings."
+  },
+  {
+    "id": 6,
+    "title": "Noise-Cancelling Over-Ear Headphones",
+    "price": 129.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.8,
+    "description": "Immerse yourself in your favorite music with these noise-cancelling over-ear headphones, designed for comfort and clarity."
+  },
+  {
+    "id": 7,
+    "title": "Smart Home Speaker with Voice Assistant",
+    "price": 99.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "description": "Control your smart home devices and enjoy rich sound quality with this smart speaker equipped with a voice assistant."
+  },
+  {
+    "id": 8,
+    "title": "High-Speed USB-C Hub",
+    "price": 34.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.1,
+    "description": "Expand your connectivity options with this high-speed USB-C hub, perfect for laptops and tablets."
+  },
+  {
+    "id": 9,
+    "title": "Portable Solar Power Bank",
+    "price": 29.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 3.9,
+    "description": "Charge your devices on the go with this portable solar power bank, featuring multiple charging ports and a built-in flashlight."
+  },
+  {
+    "id": 10,
+    "title": "Fitness Tracker with Heart Rate Monitor",
+    "price": 69.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Track your fitness goals and monitor your heart rate with this sleek and stylish fitness tracker."
+  },
+  {
+    "id": 11,
+    "title": "Wireless Charging Pad",
+    "price": 19.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.0,
+    "description": "Conveniently charge your smartphone wirelessly with this fast-charging pad, compatible with most devices."
+  },
+  {
+    "id": 12,
+    "title": "Bluetooth Smartwatch with Fitness Tracking",
+    "price": 149.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "description": "Stay connected and track your fitness goals with this stylish Bluetooth smartwatch, featuring a variety of health monitoring tools."
+  },
+  {
+    "id": 13,
+    "title": "Wireless Noise-Cancelling Earbuds",
+    "price": 99.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "description": "Enjoy music on the go with these wireless noise-cancelling earbuds, perfect for commuting and travel."
+  },
+  {
+    "id": 14,
+    "title": "4K Ultra HD Smart TV 55-Inch",
+    "price": 899.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.7,
+    "description": "Watch your favorite shows in stunning detail with this 55-inch 4K Ultra HD Smart TV, featuring streaming apps and voice control."
+  },
+  {
+    "id": 15,
+    "title": "Portable Bluetooth Speaker",
+    "price": 39.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Bring the party wherever you go with this portable Bluetooth speaker, offering powerful sound and a long battery life."
+  },
+  {
+    "id": 16,
+    "title": "Smart Wi-Fi LED Light Bulb",
+    "price": 24.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.2,
+    "description": "Control the lighting in your home with this smart Wi-Fi LED light bulb, which works with most voice assistants."
+  },
+  {
+    "id": 17,
+    "title": "High-Resolution Webcam with Microphone",
+    "price": 69.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "description": "Upgrade your video calls with this high-resolution webcam, featuring a built-in microphone for clear audio."
+  },
+  {
+    "id": 18,
+    "title": "Ergonomic Wireless Keyboard and Mouse Combo",
+    "price": 79.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "description": "Work comfortably with this ergonomic wireless keyboard and mouse combo, designed for long hours of use."
+  },
+  {
+    "id": 19,
+    "title": "Laptop Cooling Pad",
+    "price": 29.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 3.8,
+    "description": "Keep your laptop cool and running efficiently with this cooling pad, featuring adjustable fan speeds and LED lighting."
+  },
+  {
+    "id": 20,
+    "title": "1080p Full HD Dash Cam",
+    "price": 99.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "description": "Record your drives in full HD with this dash cam, featuring night vision and loop recording."
+  },
+  {
+    "id": 21,
+    "title": "Smart Thermostat with Wi-Fi",
+    "price": 199.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.7,
+    "description": "Save on energy costs with this smart thermostat, which you can control from your phone or through voice commands."
+  },
+  {
+    "id": 22,
+    "title": "Wireless Charging Stand",
+    "price": 29.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.1,
+    "description": "Charge your devices wirelessly and in style with this sleek wireless charging stand, compatible with a range of smartphones."
+  },
+  {
+    "id": 23,
+    "title": "Digital Smart Scale with Bluetooth",
+    "price": 49.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.2,
+    "description": "Track your weight and other health metrics with this digital smart scale, which syncs with your smartphone via Bluetooth."
+  },
+  {
+    "id": 24,
+    "title": "Smart Doorbell Camera",
+    "price": 149.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "description": "Monitor your front door with this smart doorbell camera, featuring HD video, motion detection, and two-way audio."
+  },
+  {
+    "id": 25,
+    "title": "High-Speed HDMI Cable",
+    "price": 14.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.0,
+    "description": "Connect your devices with this high-speed HDMI cable, supporting 4K video and high-definition audio."
+  },
+  {
+    "id": 26,
+    "title": "Portable Laptop Stand",
+    "price": 34.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Work comfortably on the go with this portable laptop stand, which is adjustable for the perfect viewing angle."
+  },
+  {
+    "id": 27,
+    "title": "Bluetooth Car Kit with FM Transmitter",
+    "price": 29.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 3.9,
+    "description": "Upgrade your car audio system with this Bluetooth car kit, featuring an FM transmitter and hands-free calling."
+  },
+  {
+    "id": 28,
+    "title": "Smart LED Strip Lights",
+    "price": 49.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "description": "Transform any room with these smart LED strip lights, which you can control from your phone or voice assistant."
+  },
+  {
+    "id": 29,
+    "title": "Compact Portable Projector",
+    "price": 179.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Enjoy movies and presentations anywhere with this compact portable projector, featuring full HD resolution and multiple input options."
+  },
+  {
+    "id": 30,
+    "title": "Digital Picture Frame with Wi-Fi",
+    "price": 99.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "description": "Display your favorite memories with this digital picture frame, which connects to Wi-Fi for easy photo sharing."
+  },
+  {
+    "id": 31,
+    "title": "Smart Plug with Energy Monitoring",
+    "price": 19.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.2,
+    "description": "Control your appliances remotely and monitor their energy usage with this smart plug, compatible with most voice assistants."
+  },
+  {
+    "id": 32,
+    "title": "Bluetooth Fitness Earbuds",
+    "price": 39.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.1,
+    "description": "Stay motivated during your workouts with these Bluetooth fitness earbuds, featuring a secure fit and sweat resistance."
+  },
+  {
+    "id": 33,
+    "title": "Smart Wi-Fi Camera for Home Security",
+    "price": 79.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "description": "Monitor your home from anywhere with this smart Wi-Fi camera, featuring HD video, motion detection, and night vision."
+  },
+  {
+    "id": 34,
+    "title": "Wireless Charging Car Mount",
+    "price": 39.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Keep your phone charged and within reach while driving with this wireless charging car mount, featuring a secure grip."
+  },
+  {
+    "id": 35,
+    "title": "Smart Home Security System",
+    "price": 299.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.7,
+    "description": "Protect your home with this smart security system, featuring door/window sensors, motion detectors, and smartphone alerts."
+  },
+  {
+    "id": 36,
+    "title": "USB-C Multiport Adapter",
+    "price": 59.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.2,
+    "description": "Expand your laptop's connectivity with this USB-C multiport adapter, offering HDMI, USB, and SD card ports."
+  },
+  {
+    "id": 37,
+    "title": "Smart Alarm Clock with Wake-Up Light",
+    "price": 79.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "description": "Wake up naturally with this smart alarm clock, which simulates sunrise to help you start your day refreshed."
+  },
+  {
+    "id": 38,
+    "title": "Smart Refrigerator with Wi-Fi Connectivity",
+    "price": 1999.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.8,
+    "description": "Keep your food fresh and your kitchen connected with this smart refrigerator, featuring a built-in touchscreen and Wi-Fi connectivity."
+  },
+  {
+    "id": 39,
+    "title": "Smart Light Switch with Touch Control",
+    "price": 29.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.2,
+    "description": "Control your lights with a touch using this smart light switch, which also works with most voice assistants."
+  },
+  {
+    "id": 40,
+    "title": "Wireless Presenter with Laser Pointer",
+    "price": 24.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Deliver professional presentations with ease using this wireless presenter, featuring a laser pointer and remote control."
+  },
+  {
+    "id": 41,
+    "title": "Portable Bluetooth Turntable",
+    "price": 89.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.1,
+    "description": "Enjoy your vinyl collection anywhere with this portable Bluetooth turntable, featuring built-in speakers and wireless connectivity."
+  },
+  {
+    "id": 42,
+    "title": "USB-C Power Bank with Quick Charge",
+    "price": 49.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "description": "Keep your devices charged on the go with this USB-C power bank, offering quick charge technology and a large capacity."
+  },
+  {
+    "id": 43,
+    "title": "Smart Home Security Camera System",
+    "price": 349.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "description": "Monitor your home inside and out with this smart security camera system, featuring HD video, night vision, and remote access."
+  },
+  {
+    "id": 44,
+    "title": "Wireless Ergonomic Mouse",
+    "price": 49.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Reduce strain and work comfortably with this wireless ergonomic mouse, designed to support your hand's natural position."
+  },
+  {
+    "id": 45,
+    "title": "Smart Digital Thermometer",
+    "price": 24.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.2,
+    "description": "Easily monitor your health with this smart digital thermometer, which syncs with your smartphone for convenient tracking."
+  },
+  {
+    "id": 46,
+    "title": "High-Speed External SSD 500GB",
+    "price": 99.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.7,
+    "description": "Store and transfer your files quickly with this high-speed external SSD, offering 500GB of storage capacity."
+  },
+  {
+    "id": 47,
+    "title": "Portable Bluetooth Karaoke Machine",
+    "price": 129.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.4,
+    "description": "Bring the party anywhere with this portable Bluetooth karaoke machine, featuring a wireless microphone and built-in speakers."
+  },
+  {
+    "id": 48,
+    "title": "Smart Air Purifier with Wi-Fi",
+    "price": 199.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.5,
+    "description": "Breathe easier with this smart air purifier, which you can control remotely via Wi-Fi and features a HEPA filter."
+  },
+  {
+    "id": 49,
+    "title": "Portable External Monitor",
+    "price": 179.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.3,
+    "description": "Expand your workspace with this portable external monitor, offering full HD resolution and easy connectivity."
+  },
+  {
+    "id": 50,
+    "title": "Smart Robot Vacuum Cleaner",
+    "price": 249.99,
+    "currency": "USD",
+    "image": "https://via.placeholder.com/200",
+    "rating": 4.6,
+    "description": "Keep your floors clean with this smart robot vacuum cleaner, featuring powerful suction and remote control via a smartphone app."
+  }
+]
+
 }
+
+
