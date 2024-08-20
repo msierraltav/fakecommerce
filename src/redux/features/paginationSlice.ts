@@ -3,11 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 interface TPaginationInitialState{
     stringQuery: string;
     currentPage: number;
+    limit: number;
 }
 
 const initialState : TPaginationInitialState= {
     stringQuery: "",
     currentPage: 1,
+    limit: 10,
 }
 
 export const paginationSlice = createSlice({

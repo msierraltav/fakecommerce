@@ -1,5 +1,11 @@
 export interface Products{
-    products : Product[];
+    first:number;
+    prev: number | null; // previous page
+    next: number | null; // next page
+    last: number | null; // last item
+    pages: number | null; // number of pages
+    items: number | null; // total items
+    data : Product[] | undefined;
 }
 
 export interface Product{

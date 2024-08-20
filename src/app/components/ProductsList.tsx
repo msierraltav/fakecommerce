@@ -4,26 +4,35 @@ import Image from "next/image";
 import { Product, TGetData } from "@/lib/types";
 import {useAppDispatch, useAppSelector} from "@/hooks/useReduxHooks"
 import {useGetProductsQuery} from "@/redux/services/productsApi"
+import {setCurrentPage} from "@/redux/features/paginationSlice";
 import Link from "next/link";
+import { Pagination } from "@nextui-org/react";
 
 
 export default function ProductsList() {
 
-  const currentPage = useAppSelector(state => state.paginationReducer.currentPage);
+  const dispatch = useAppDispatch();
+  const page = useAppSelector(state => state.paginationReducer.currentPage);
+  const limit = useAppSelector(state => state.paginationReducer.limit)
   const query = useAppSelector(state => state.paginationReducer.stringQuery);
-  const {data, isLoading, error, isSuccess} = useGetProductsQuery(null);
+  const {data, isLoading, error, isSuccess} = useGetProductsQuery({page:page, limit:limit});
+
+
+  const handlePaginationChange  = (e : any) =>{
+    dispatch(setCurrentPage(e));
+  };
 
   let products : Product[] | undefined = [];
 
   if(query){
-    const filterProducts = data?.filter((product : Product ) => {
+    const filterProducts = data?.data?.filter((product : Product ) => {
       if(product.title.toLowerCase().includes(query.toLowerCase())){
         return product;
       }
     });
     products = filterProducts;
   } else{
-    products = data;
+    products = data?.data;
   }
 
   return (
@@ -56,9 +65,13 @@ export default function ProductsList() {
                 />
               </CardBody>
             </Card>
+            
           ))}
         </div>
       ) : (<div className="mb-3 grid grid-cols-5 gap-3"> No Data... </div>)}
+      {data && (
+        <Pagination color="success" showControls initialPage={page} total={data?.pages ?? 0} onChange={handlePaginationChange}/>
+      )}
     </div>
   );
 }
