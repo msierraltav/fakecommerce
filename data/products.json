@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+        "title": "Wireless Bluetooth Headphones",
+        "price": 59.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.2
+    },
+    {
+        "id": 2,
+        "title": "4K Ultra HD Smart TV",
+        "price": 499.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.7
+    },
+    {
+        "id": 3,
+        "title": "Gaming Laptop",
+        "price": 1299.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.8
+    },
+    {
+        "id": 4,
+        "title": "Smartphone with Triple Camera",
+        "price": 899.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.3
+    },
+    {
+        "id": 5,
+        "title": "Wireless Charging Station",
+        "price": 39.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.0
+    },
+    {
+        "id": 6,
+        "title": "Smart Home Assistant Speaker",
+        "price": 149.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.6
+    },
+    {
+        "id": 7,
+        "title": "Noise Cancelling Earbuds",
+        "price": 199.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.4
+    },
+    {
+        "id": 8,
+        "title": "Portable External Hard Drive 2TB",
+        "price": 79.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.3
+    },
+    {
+        "id": 9,
+        "title": "Smartwatch with Heart Rate Monitor",
+        "price": 229.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.7
+    },
+    {
+        "id": 10,
+        "title": "Wireless Mechanical Keyboard",
+        "price": 119.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.5
+    }
+]
+
+
