@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
-import {Providers} from "@/redux/providers"
+import { Providers } from "@/redux/providers";
 import Header from "@/app/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-gray-600">
-      <body className={`${inter.className}`} >
+      <body className={`${inter.className}`}>
         <NextUIProvider>
           <Providers>
-          <Header />
-          {children}
+            <Header />
+            {children}
           </Providers>
         </NextUIProvider>
       </body>

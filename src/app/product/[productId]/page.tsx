@@ -41,8 +41,8 @@ export default function Product({ params }: ProductProps) {
               {product.currency} {product.price}
             </small>
             <small className="text-tiny font-bold uppercase">
-                  <span>⭐{product.rating}</span>
-                </small>
+              <span>⭐{product.rating}</span>
+            </small>
           </CardHeader>
           <CardBody className="overflow-visible py-2">
             <Image

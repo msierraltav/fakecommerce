@@ -2,6 +2,8 @@
 
 A simple fake store using json-server , NextJs, Redux, and tailwind.
 
+![fake store image](./docs/fake.png)
+
 ## Getting Started
 
 First , run the development server:
@@ -33,7 +35,5 @@ Due issues with json-server 1.0.0-beta.2 the "name_like="query is not supported 
 While I don’t have extensive experience with Tailwind CSS, I’ve found it to be a valuable tool for creating components with a specific design aesthetic. Personally, I lean toward Sass, but learning about Tailwind during this test has been a pleasant surprise. As for testing, I’m short on time and haven’t worked with Jest, but based on how straightforward it is to create components, I assume adding tests wouldn’t be overly challenging.
 
 ### things to do / improve
-
-- UI using better next UI or another UI framework
 - implementing test
 - add SEO metadata
