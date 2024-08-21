@@ -6,7 +6,13 @@ A simple fake store using json-server , NextJs, Redux, and tailwind.
 
 ## Getting Started
 
-First , run the development server:
+First, install the packages
+
+```
+npm install
+```
+
+then , run the development server:
 
 ```bash
 npm run dev
