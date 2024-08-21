@@ -1,10 +1,8 @@
-import Products from "./components/Products";
-import Cart from "./components/Cart";
+import Products from "@/app/components/Products";
 
 export default function Home() {
   return (
-      <main className="flex min-h-screen flex-col items-center justify-normal gap-5 p-24">
-        <Cart/>
+      <main className="flex min-h-screen flex-col items-center justify-normal gap-5 pt-3 px-24">
         <Products />
       </main>
   );
