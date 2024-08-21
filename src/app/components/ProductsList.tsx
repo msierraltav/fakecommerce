@@ -1,7 +1,7 @@
 "use client";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
-import { Product, TGetData } from "@/lib/types";
+import { TProduct, TGetData } from "@/lib/types";
 import { useAppDispatch, useAppSelector } from "@/hooks/useReduxHooks";
 import { useGetProductsQuery } from "@/redux/services/productsApi";
 import { setCurrentPage } from "@/redux/features/paginationSlice";
@@ -25,14 +25,14 @@ export default function ProductsList() {
     dispatch(setCurrentPage(e));
   };
 
-  const handleAddToCart = (product: Product) => {
+  const handleAddToCart = (product: TProduct) => {
     dispatch(addProduct(product));
   };
 
-  let products: Product[] | undefined = [];
+  let products: TProduct[] | undefined = [];
 
   if (query) {
-    const filterProducts = data?.data?.filter((product: Product) => {
+    const filterProducts = data?.data?.filter((product: TProduct) => {
       if (product.title.toLowerCase().includes(query.toLowerCase())) {
         return product;
       }

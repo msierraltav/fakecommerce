@@ -3,6 +3,9 @@ import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import Link from "next/link";
 import { useGetProductByIdQuery } from "@/redux/services/productsApi";
 import Image from "next/image";
+import { useAppDispatch, useAppSelector } from "@/hooks/useReduxHooks";
+import { addProduct } from "@/redux/features/cartSlice";
+import { TProduct } from "@/lib/types";
 
 interface ProductProps {
   params: {
@@ -20,9 +23,15 @@ export default function Product({ params }: ProductProps) {
     id: params.productId,
   });
 
+  const dispatch = useAppDispatch();
+
+  const handleAddToCart = (product: TProduct) => {
+    dispatch(addProduct(product));
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-normal gap-5 p-24">
-      <Link href="/" className="justify-self-start">
+      <Link href="/" className="flex w-full justify-self-start">
         <button className="btn btn-primary">Back</button>
       </Link>
       {error && <div> 🚫 </div>}
@@ -52,6 +61,12 @@ export default function Product({ params }: ProductProps) {
               width={270}
               height={-1}
             />
+                            <div
+                  onClick={() => handleAddToCart(product)}
+                  className="cursor-pointer"
+                >
+                  ➕ Add to cart
+                </div>
             <small> {product.description}</small>
           </CardBody>
         </Card>

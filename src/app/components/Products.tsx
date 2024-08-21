@@ -14,9 +14,7 @@ export default function Products() {
     <div className="flex flex-col items-center justify-start gap-3">
 
       <Search placeholder="Search product" />
-      <div className="">
       <Sorting/>
-      </div>
       <Suspense key={query + currentPage} fallback={<div>Loading...</div>}>
         <ProductsList />
       </Suspense>

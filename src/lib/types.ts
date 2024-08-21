@@ -1,14 +1,14 @@
-export interface Products{
+export interface TProducts{
     first:number;
     prev: number | null; // previous page
     next: number | null; // next page
     last: number | null; // last item
     pages: number | null; // number of pages
     items: number | null; // total items
-    data : Product[] | undefined;
+    data : TProduct[] | undefined;
 }
 
-export interface Product{
+export interface TProduct{
 
     id: number,
     title : string,
@@ -20,7 +20,7 @@ export interface Product{
 }
 
 export interface TGetData{
-    data: Product[] | undefined,
+    data: TProduct[] | undefined,
     error: any,
     loading: boolean,
 }

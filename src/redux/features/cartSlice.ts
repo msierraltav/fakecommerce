@@ -1,8 +1,8 @@
-import { Product } from "@/lib/types";
+import { TProduct } from "@/lib/types";
 import { createSlice } from "@reduxjs/toolkit";
 
 export interface CartItem {
-    items: Product[];
+    items: TProduct[];
 }
 
 export const initialState: CartItem = {

@@ -1,11 +1,11 @@
 // server render aproach
-import { Product } from "@/lib/types";
+import { TProduct } from "@/lib/types";
 import Products from "../app/components/Products";
 
 export async function GetDataServer() {
 
     const URL = "https://my-json-server.typicode.com/msierraltav/fakecommerce/products"
-    let data : Product[] = [];
+    let data : TProduct[] = [];
     let error: any = "";
     let loading : boolean = true;        
         try {

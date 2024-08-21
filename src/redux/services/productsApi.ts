@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
-import { Products, Product } from "@/lib/types"
+import { TProducts, TProduct } from "@/lib/types"
 
 export const productsApi = createApi({
     reducerPath: 'productsApi',
@@ -7,13 +7,13 @@ export const productsApi = createApi({
         baseUrl: "http://localhost:3000"
     }),
     endpoints: (builder) => ({
-        getProducts: builder.query<Products, { page: number, limit: number , sort: string }>({
+        getProducts: builder.query<TProducts, { page: number, limit: number , sort: string }>({
             query: ({ page, limit, sort }) => `products?_page=${page}&_per_page=${limit}&_sort=${sort}`
         }),
-        getProductsOrderByPrice: builder.query<Products, { order: "asc" | "desc" }>({
+        getProductsOrderByPrice: builder.query<TProducts, { order: "asc" | "desc" }>({
             query: ({ order }) => `products?_sort=price&_order=${order}`
         }),
-        getProductById: builder.query<Product, { id: number }>({
+        getProductById: builder.query<TProduct, { id: number }>({
             query: ({ id }) => `products/${id}`
         }),
     })

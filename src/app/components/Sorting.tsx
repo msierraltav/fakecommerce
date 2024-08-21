@@ -12,35 +12,30 @@ export default function Sorting() {
   }
 
   const ChipButton = ({children, value} : ChipButtonProps) => {
-    const orderHandler = () =>{
-        dispatch(setOrder(value));
-    }
-    const variant = sort === value ? "solid" : "flat";
+    const isSelected = sort.includes(value) ? "solid" : "flat";
+    const currentOrderdirectionDesc = sort.startsWith('-')? true : false
+    const orderIcon = currentOrderdirectionDesc ? "⬆️" : "⬇️";
+    // change to oposite direction
+    const prefix = currentOrderdirectionDesc? '' : '-';
 
+    const orderHandler = () =>{
+        dispatch(setOrder(`${prefix}${value}`));
+    }
     return(
-        <Chip variant={variant}  color="default" className="cursor-pointer" onClick={orderHandler}> {children} </Chip>
+        <Chip variant={isSelected}  color="default" className="cursor-pointer" onClick={orderHandler}> {children} {orderIcon}</Chip>
     )
   }
 
   return (
-    <div className="flex flex-row justify-items-start">
-      <ChipButton value="-price">
-        🪙⬆️
-      </ChipButton>
+    <div className="flex w-full flex-row justify-end gap-2">
       <ChipButton value="price">
-        🪙⬇️
-      </ChipButton>
-      <ChipButton value="-rating">
-        ⭐⬆️
+        🪙
       </ChipButton>
       <ChipButton value="rating">
-        ⭐⬇️
+        ⭐
       </ChipButton>
       <ChipButton value="id">
-        🆔⬆️
-      </ChipButton>
-      <ChipButton value="-id">
-        🆔⬇️
+        🆔
       </ChipButton>
     </div>
   );
