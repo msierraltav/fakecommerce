@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import Link from "next/link";
 import { useGetProductByIdQuery } from "@/redux/services/productsApi";
