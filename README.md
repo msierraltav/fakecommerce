@@ -2,6 +2,8 @@
 
 A simple fake store using json-server , NextJs, Redux, and tailwind.
 
+Test app to apply to ~~redacted~~ company with a timeframe of 24 hours.
+
 ![fake store image](./docs/fake.png)
 
 ## Getting Started
